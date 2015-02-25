@@ -1,0 +1,23 @@
+{
+  "name": "httpjs",
+  "version": "0.0.1",
+  "homepage": "https://github.com/g4code/httpjs",
+  "authors": [
+    "Drasko Gomboc <drasko.gomboc@gmail.com>",
+    "Zeljko Simic <zeljkosbgd@gmail.com>"
+  ],
+  "description": "jquery ajax wrapper",
+  "main": "http.js",
+  "keywords": [
+    "ajax",
+    "wrapper"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
