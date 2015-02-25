@@ -1,5 +1,4 @@
-;
-define(function(){
+;(function() {
 
     var Http = function(options){
         this.response = null;
@@ -45,6 +44,13 @@ define(function(){
 
     };
 
-    return Http;
+    if (typeof define != 'undefined' && define.hasOwnProperty('amd') && define.amd) { // RequireJS AMD
+        define(function(){
+            return Http;
+        });
+    } else if (typeof window != 'undefined') { // Fall back to attaching to window
+        window.G4 = typeof G4 != "undefined" ? G4 : {};
+        window.G4.http
+    };
 
-});
+}).call(this);
