@@ -50,7 +50,7 @@
         });
     } else if (typeof window != 'undefined') { // Fall back to attaching to window
         window.G4 = typeof G4 != "undefined" ? G4 : {};
-        window.G4.http
+        window.G4.Http = Http;
     };
 
 }).call(this);
